@@ -1,0 +1,140 @@
+/* Fuente principal y ajustes generales */
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente moderna */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a); /* Fondo dinámico */
+    color: #f4f4f4; /* Texto en blanco */
+    overflow: hidden; /* Oculta cualquier scroll innecesario */
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    padding: 30px;
+    background: rgba(30, 30, 30, 0.95); /* Fondo translúcido */
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    max-width: 400px;
+    width: 90%; /* Diseño responsivo */
+    border: 1px solid #444;
+}
+
+/* Título */
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff; /* Texto blanco puro */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Botones con diseño moderno */
+button {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #003d7a);
+    transform: scale(1.05); /* Efecto ligero */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Entrada de texto */
+input[type="text"] {
+    width: 90%; /* Ajuste responsivo */
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: rgba(50, 50, 50, 0.9); /* Fondo translúcido */
+    color: #f4f4f4;
+    text-align: center; /* Centrado */
+    transition: all 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 10px #007bff99;
+    background-color: rgba(60, 60, 60, 0.9);
+}
+
+/* Lista de tareas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    max-height: 300px; /* Máxima altura */
+    overflow-y: auto; /* Scroll interno */
+    scrollbar-width: thin; /* Scroll más delgado */
+    scrollbar-color: #007BFF #2b2b2b; /* Colores personalizados */
+}
+
+ul li {
+    padding: 12px;
+    border: 1px solid #444;
+    margin: 8px 0;
+    border-radius: 10px;
+    background: rgba(40, 40, 40, 0.9); /* Fondo translúcido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: rgba(60, 60, 60, 0.9);
+    transform: scale(1.02);
+}
+
+/* Botón eliminar dentro de la lista */
+ul li button {
+    background: linear-gradient(135deg, #dc3545, #9a2530);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+ul li button:hover {
+    background: linear-gradient(135deg, #b02a37, #72171d);
+    transform: scale(1.05);
+}
+
+/* Estilo para íconos */
+button i, ul li button i {
+    font-size: 18px;
+}
